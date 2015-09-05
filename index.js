@@ -1,53 +1,44 @@
 var os = require('os');
 
-var arch;
-var platform;
-var osinfo
-var useragent_string;
-
-function getsystem() {
-  if (os.platform() === 'darwin') {
-    platform = 'Mac OS X';
-    osinfo = " (" + platform + ")";
-  } else if (os.platform() === 'win32') {
-    platform = 'Windows';
-    if (os.arch() === 'x64') {
-      arch = " ; Win64; x64";
-    } else if (os.arch() === 'ia32') {
-      arch = "";
-    } else {
-      arch = "";
-    }
-    osinfo = " (" + platform + arch + ")";
-  } else if (os.platform() === 'linux') {
-    platform = 'Linux';
-    if (os.arch() === 'x64') {
-      arch = ' x86_64';
-    } else if (os.arch() === 'ia32') {
-      arch = ' i586';
-    } else {
-      arch = "";
-    }
-    osinfo = " (" + platform + arch + ")";
+if (os.platform() === 'darwin') {
+  var platform = 'Mac OS X';
+  var osinfo = " (" + platform + ")";
+} else if (os.platform() === 'win32') {
+  var platform = "Windows";
+  if (os.arch() === 'x64') {
+    var arch = " ; Win64; x64";
+  } else if (os.arch() === 'ia32') {
+    var arch = "";
   } else {
-    osinfo = "";
+    var arch = "";
   }
+  var osinfo = " (" + platform + arch + ")";
+} else if (os.platform() === 'linux') {
+  var platform = 'Linux';
+  if (os.arch() === 'x64') {
+    var arch = " x86_64";
+  } else if (os.arch() === 'ia32') {
+    var arch = "";
+  } else {
+    var arch = "";
+  }
+  var osinfo = " (" + platform + arch + ")";
+} else {
+  var osinfo = "";
 }
 
-getsystem();
-
 function chrome() {
-  useragent_string = "Mozilla/5.0" + osinfo + " AppleWebKit/537.36 (KHTML, like Gecko) Chrome Safari/537.36";
+  var useragent_string = "Mozilla/5.0" + osinfo + " AppleWebKit/537.36 (KHTML, like Gecko) Chrome Safari/537.36";
   return useragent_string;
 }
 
 function firefox() {
-  useragent_string = "Mozilla/5.0" + osinfo + " Gecko/20100101 Firefox";
+  var useragent_string = "Mozilla/5.0" + osinfo + " Gecko/20100101 Firefox";
   return useragent_string;
 }
 
 function opera() {
-  useragent_string = "Opera" + osinfo + " Presto";
+  var useragent_string = "Opera" + osinfo + " Presto";
   return useragent_string;
 }
 
