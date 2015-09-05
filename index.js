@@ -15,6 +15,8 @@ function getsystem() {
       arch = " ; Win64; x64";
     } else if (os.arch() === 'ia32') {
       arch = "";
+    } else {
+      arch = "";
     }
     osinfo = " (" + platform + arch + ")";
   } else if (os.platform() === 'linux') {
@@ -23,6 +25,8 @@ function getsystem() {
       arch = ' x86_64';
     } else if (os.arch() === 'ia32') {
       arch = ' i586';
+    } else {
+      arch = "";
     }
     osinfo = " (" + platform + arch + ")";
   } else {
