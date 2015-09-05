@@ -34,10 +34,23 @@ function getsystem() {
   }
 }
 
-function useragent() {
-  getsystem();
+getsystem();
+
+function chrome() {
+  useragent_string = "Mozilla/5.0" + osinfo + " AppleWebKit/537.36 (KHTML, like Gecko) Chrome Safari/537.36";
+  return useragent_string;
+}
+
+function firefox() {
   useragent_string = "Mozilla/5.0" + osinfo + " Gecko/20100101 Firefox";
   return useragent_string;
 }
 
-module.exports = typeof os.useragent === 'function' ? os.useragent : useragent;
+function opera() {
+  useragent_string = "Opera" + osinfo + " Presto";
+  return useragent_string;
+}
+
+module.exports.chrome = chrome;
+module.exports.firefox = firefox;
+module.exports.opera = opera;
