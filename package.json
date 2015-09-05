@@ -1,0 +1,22 @@
+{
+  "name": "get-user-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fscherwi/get-user-agent.git"
+  },
+  "keywords": [
+    "useragent"
+  ],
+  "author": "fscherwi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fscherwi/get-user-agent/issues"
+  },
+  "homepage": "https://github.com/fscherwi/get-user-agent#readme"
+}

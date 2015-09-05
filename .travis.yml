@@ -1,0 +1,17 @@
+language: node_js
+os:
+  - osx
+
+matrix:
+  include:
+    - os: linux
+      env: TARGET_ARCH=arm
+    - os: linux
+      env: TARGET_ARCH=ia32
+    - os: linux
+      env: TARGET_ARCH=x64
+
+script: 'npm run test'
+
+notifications:
+  email: false
