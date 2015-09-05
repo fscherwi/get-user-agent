@@ -1,9 +1,7 @@
 language: node_js
 os:
   - osx
-
 node_js: "0.12"
-
 matrix:
   include:
     - os: linux
@@ -14,8 +12,13 @@ matrix:
       env: TARGET_ARCH=x64
   allow_failures:
     - os: osx
-
-script: 'npm run test'
-
 notifications:
   email: false
+
+install:
+  - npm install
+script:
+  - npm run test
+after_sucess:
+  - istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js

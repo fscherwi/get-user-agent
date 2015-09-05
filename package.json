@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/fscherwi/get-user-agent/issues"
   },
-  "homepage": "https://github.com/fscherwi/get-user-agent#readme"
+  "homepage": "https://github.com/fscherwi/get-user-agent#readme",
+  "devDependencies": {
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.3.19",
+    "mocha": "^2.3.0"
+  }
 }

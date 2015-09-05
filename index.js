@@ -1,5 +1,6 @@
 var os = require('os');
 
+/* istanbul ignore next */
 if (os.platform() === 'darwin') {
   var platform = 'Mac OS X';
   var osinfo = " (" + platform + ")";
