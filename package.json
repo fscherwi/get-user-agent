@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node test.js",
-    "cover": "istanbul cover --include-all-sources test.js"
+    "cover": "./node_modules/.bin/istanbul cover --include-all-sources test.js"
   },
   "repository": {
     "type": "git",
