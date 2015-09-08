@@ -33,12 +33,12 @@ if (os.platform() === 'darwin') {
 }
 
 function chrome(version) {
-  var useragent_string = "Mozilla/5.0" + " (" + osinfo + ")" + " AppleWebKit/537.36 (KHTML, like Gecko) Chrome/"+  version + " Safari/537.36";
+  var useragent_string = "Mozilla/5.0" + " (" + osinfo + ")" + " AppleWebKit/537.36 (KHTML, like Gecko) Chrome/" + version + " Safari/537.36";
   return useragent_string;
 }
 
 function firefox(version) {
-  var useragent_string = "Mozilla/5.0"  + " (" + osinfo + "; rv:" + version + ")"  + " Gecko/20100101 Firefox/" +version;
+  var useragent_string = "Mozilla/5.0" + " (" + osinfo + "; rv:" + version + ")" + " Gecko/20100101 Firefox/" + version;
   return useragent_string;
 }
 
