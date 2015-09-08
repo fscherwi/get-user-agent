@@ -10,6 +10,8 @@ if (os.platform() === 'darwin') {
     var arch = " ; Win64; x64";
   } else if (os.arch() === 'ia32') {
     var arch = "";
+  } else if (os.arch() === 'arm') {
+    var arch = "; ARM";
   } else {
     var arch = "";
   }
@@ -20,6 +22,8 @@ if (os.platform() === 'darwin') {
     var arch = " x86_64";
   } else if (os.arch() === 'ia32') {
     var arch = "";
+  } else if (os.arch() === 'arm') {
+    var arch = "; ARM";
   } else {
     var arch = "";
   }
