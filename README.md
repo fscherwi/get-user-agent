@@ -3,12 +3,14 @@
 
 ## Usage
 
-```
+```js
 var useragent = require('useragent');
+
 useragent.your_option(your_version);
 ```
-#### Avaible Options:
-```firfox```, ```chrome```and ```Opera```
+
+### Avaible Options:
+`firefox`, `chrome` and `opera`
 
 ### example script
 
