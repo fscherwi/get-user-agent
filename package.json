@@ -19,8 +19,5 @@
   "bugs": {
     "url": "https://github.com/fscherwi/get-user-agent/issues"
   },
-  "homepage": "https://github.com/fscherwi/get-user-agent#readme",
-  "devDependencies": {
-    "istanbul": "^0.3.19"
-  }
+  "homepage": "https://github.com/fscherwi/get-user-agent#readme"
 }

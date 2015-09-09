@@ -10,12 +10,11 @@ notifications:
   email: false
 
 install:
-  - npm install
-  - npm install coveralls
+  - npm install coveralls istanbul
 before_script:
     - uname -a
 script:
   - npm run test
 after_success:
-  - npm run cover
+  - ./node_modules/.bin/istanbul cover --include-all-sources test.js
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
