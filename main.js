@@ -47,6 +47,24 @@ function opera(version) {
   return useragent_string;
 }
 
+function chrome_advanced(version, webkit_version, safari_version) {
+  var useragent_string = "Mozilla/5.0" + " (" + osinfo + ")" + " AppleWebKit/" + webkit_version + " (KHTML, like Gecko) Chrome/" + version + " Safari/" + safari_version;
+  return useragent_string;
+}
+
+function firefox_advanced(version, gecko_version) {
+  var useragent_string = "Mozilla/5.0" + " (" + osinfo + "; rv:" + version + ")" + " Gecko/" + gecko_version + " Firefox/" + version;
+  return useragent_string;
+}
+
+function opera_advanced(version, presto_version) {
+  var useragent_string = "Opera" + osinfo + " Presto/" + presto_version + "Version/" + version;
+  return useragent_string;
+}
+
 module.exports.chrome = chrome;
 module.exports.firefox = firefox;
 module.exports.opera = opera;
+module.exports.chrome_advanced = chrome_advanced;
+module.exports.firefox_advanced = firefox_advanced;
+module.exports.opera_advanced = opera_advanced;
