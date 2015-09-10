@@ -3,7 +3,7 @@ var os = require('os');
 /* istanbul ignore next */
 if (os.platform() === 'darwin') {
   var platform = 'Mac OS X';
-  var osinfo = " (" + platform + ")";
+  var osinfo = platform;
 } else if (os.platform() === 'win32') {
   var platform = "Windows";
   if (os.arch() === 'x64') {
@@ -36,25 +36,29 @@ function chrome(version) {
   var useragent_string = "Mozilla/5.0" + " (" + osinfo + ")" + " AppleWebKit/537.36 (KHTML, like Gecko) Chrome/" + version + " Safari/537.36";
   return useragent_string;
 }
+
 function firefox(version) {
   var useragent_string = "Mozilla/5.0" + " (" + osinfo + "; rv:" + version + ")" + " Gecko/20100101 Firefox/" + version;
   return useragent_string;
 }
+
 function opera(version) {
-  var useragent_string = "Opera" + osinfo + " Presto + Version/" + version;
+  var useragent_string = "Opera (" + osinfo + " ) Presto Version/" + version;
   return useragent_string;
 }
 
-function chrome_advanced(version, webkit_version, safari_version) {
-  var useragent_string = "Mozilla/5.0" + " (" + osinfo + ")" + " AppleWebKit/" + webkit_version + " (KHTML, like Gecko) Chrome/" + version + " Safari/" + safari_version;
+function chrome_advanced(version, webkit_version) {
+  var useragent_string = "Mozilla/5.0" + " (" + osinfo + ")" + " AppleWebKit/" + webkit_version + " (KHTML, like Gecko) Chrome/" + version + " Safari/" + webkit_version;
   return useragent_string;
 }
+
 function firefox_advanced(version, gecko_version) {
   var useragent_string = "Mozilla/5.0" + " (" + osinfo + "; rv:" + version + ")" + " Gecko/" + gecko_version + " Firefox/" + version;
   return useragent_string;
 }
+
 function opera_advanced(version, presto_version) {
-  var useragent_string = "Opera" + osinfo + " Presto/" + presto_version + "Version/" + version;
+  var useragent_string = "Opera (" + osinfo + " ) Presto/" + presto_version + " Version/" + version;
   return useragent_string;
 }
 
