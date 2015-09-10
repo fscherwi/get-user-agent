@@ -2,7 +2,7 @@
   "name": "get-user-agent",
   "version": "1.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "node test.js",
     "cover": "./node_modules/.bin/istanbul cover --include-all-sources test.js"
