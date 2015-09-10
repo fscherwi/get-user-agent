@@ -43,7 +43,7 @@ function firefox(version) {
 }
 
 function opera(version) {
-  var useragent_string = "Opera" + osinfo + " Presto/" + version;
+  var useragent_string = "Opera" + osinfo + " Presto + Version/" + version;
   return useragent_string;
 }
 
