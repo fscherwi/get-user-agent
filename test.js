@@ -1,4 +1,4 @@
-var  useragent = require('./index.js');
+var  useragent = require('./main.js');
 
 console.log("\n" + useragent.chrome("41.0.2228.0"));
 console.log(useragent.firefox("40.0"));
