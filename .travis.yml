@@ -2,7 +2,7 @@ language: node_js
 os:
   - osx
   - linux
-node_js: "0.12"
+node_js: "4.0"
 matrix:
   allow_failures:
     - os: osx
