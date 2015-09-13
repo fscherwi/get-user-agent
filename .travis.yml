@@ -6,13 +6,6 @@ matrix:
     - os: osx
 notifications:
   email: false
-before_install:
-  - curl https://nodejs.org/dist/latest/node-v4.0.0.tar.gz --output node-v4.0.0.tar.gz
-  - tar -xzf node-v4.0.0.tar.gz
-  - cd node-v4.0.0
-  - ./configure
-  - make
-  - make install
 install:
   - npm install coveralls istanbul
 before_script:
