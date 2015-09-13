@@ -1,9 +1,6 @@
 os:
   - osx
   - linux
-matrix:
-  allow_failures:
-    - os: osx
 notifications:
   email: false
 install:
