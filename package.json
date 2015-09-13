@@ -4,8 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "node test.js",
-    "cover": "./node_modules/.bin/istanbul cover --include-all-sources test.js"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/fscherwi/get-user-agent/issues"
   },
-  "homepage": "https://github.com/fscherwi/get-user-agent#readme"
+  "homepage": "https://github.com/fscherwi/get-user-agent#readme",
+  "dependencies": {
+    "get-osx-version": "^1.0.0"
+  }
 }
