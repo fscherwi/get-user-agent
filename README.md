@@ -4,7 +4,7 @@
 ## Usage
 
 ```js
-var useragent = require('useragent');
+var useragent = require('get-user-agent');
 
 useragent.your_option(your_version);
 ```
@@ -15,7 +15,7 @@ useragent.your_option(your_version);
 ### Example script
 
 ```js
-var useragent = require('useragent');
+var useragent = require('geht-user-agent');
 
 console.log(useragent.firefox("40.0"));
 ```
