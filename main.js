@@ -15,7 +15,7 @@ if (os.platform() === 'darwin') {
   } else {
     var arch = "";
   }
-  var osinfo = " (" + platform + arch + ")";
+  var osinfo = platform + arch;
 } else if (os.platform() === 'linux') {
   var platform = 'Linux';
   if (os.arch() === 'x64') {
@@ -34,32 +34,26 @@ if (os.platform() === 'darwin') {
 
 module.exports = {
   chrome: function chrome(version) {
-    var useragent_string = "Mozilla/5.0" + " (" + osinfo + ")" + " AppleWebKit/537.36 (KHTML, like Gecko) Chrome/" + version + " Safari/537.36";
-    return useragent_string;
+    return "Mozilla/5.0" + " (" + osinfo + ")" + " AppleWebKit/537.36 (KHTML, like Gecko) Chrome/" + version + " Safari/537.36";
   },
 
   firefox: function firefox(version) {
-    var useragent_string = "Mozilla/5.0" + " (" + osinfo + "; rv:" + version + ")" + " Gecko/20100101 Firefox/" + version;
-    return useragent_string;
+    return "Mozilla/5.0" + " (" + osinfo + "; rv:" + version + ")" + " Gecko/20100101 Firefox/" + version;
   },
 
   opera: function opera(version) {
-    var useragent_string = "Opera (" + osinfo + " ) Presto Version/" + version;
-    return useragent_string;
+    return "Opera (" + osinfo + " ) Presto Version/" + version;
   },
 
   chrome_advanced: function chrome_advanced(version, webkit_version) {
-    var useragent_string = "Mozilla/5.0" + " (" + osinfo + ")" + " AppleWebKit/" + webkit_version + " (KHTML, like Gecko) Chrome/" + version + " Safari/" + webkit_version;
-    return useragent_string;
+    return "Mozilla/5.0" + " (" + osinfo + ")" + " AppleWebKit/" + webkit_version + " (KHTML, like Gecko) Chrome/" + version + " Safari/" + webkit_version;
   },
 
   firefox_advanced: function firefox_advanced(version, gecko_version) {
-    var useragent_string = "Mozilla/5.0" + " (" + osinfo + "; rv:" + version + ")" + " Gecko/" + gecko_version + " Firefox/" + version;
-    return useragent_string;
+    return "Mozilla/5.0" + " (" + osinfo + "; rv:" + version + ")" + " Gecko/" + gecko_version + " Firefox/" + version;
   },
 
   opera_advanced: function opera_advanced(version, presto_version) {
-    var useragent_string = "Opera (" + osinfo + " ) Presto/" + presto_version + " Version/" + version;
-    return useragent_string;
+    return "Opera (" + osinfo + " ) Presto/" + presto_version + " Version/" + version;
   },
 };
