@@ -1,7 +1,7 @@
 {
   "name": "get-user-agent",
   "version": "1.1.1",
-  "description": "",
+  "description": "easily get a useragent",
   "main": "main.js",
   "scripts": {
     "test": "node test.js"
