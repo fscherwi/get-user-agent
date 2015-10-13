@@ -15,7 +15,7 @@ useragent.your_option(your_version);
 ### Example script
 
 ```js
-var useragent = require('geht-user-agent');
+var useragent = require('get-user-agent');
 
 console.log(useragent.firefox("40.0"));
 ```
