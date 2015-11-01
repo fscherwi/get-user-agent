@@ -6,8 +6,6 @@ notifications:
 install:
   - npm install
   - npm install coveralls istanbul
-before_script:
-    - uname -a
 script:
   - npm run test
 after_script:
