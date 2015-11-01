@@ -41,6 +41,6 @@ module.exports = {
     return "Opera/9.80 (" + osinfo + " ) Presto/2.12.388 Version/" + version;
   },
   opera_advanced: function opera_advanced(version, presto_version, opera_version) {
-    return "Opera/" + opera_version + "(" + osinfo + " ) Presto/" + presto_version + " Version/" + version;
+    return "Opera/" + opera_version + " (" + osinfo + " ) Presto/" + presto_version + " Version/" + version;
   }
 };
