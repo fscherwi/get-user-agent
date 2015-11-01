@@ -1,7 +1,7 @@
 var os = require('os');
 var arch,
-    osinfo,
-    platform;
+  osinfo,
+  platform;
 /* istanbul ignore next */
 if (os.platform() === 'darwin') {
   arch = require('get-osx-version').get();
@@ -38,9 +38,9 @@ module.exports = {
     return "Mozilla/5.0" + " (" + osinfo + "; rv:" + version + ")" + " Gecko/" + gecko_version + " Firefox/" + version;
   },
   opera: function opera(version) {
-    return "Opera (" + osinfo + " ) Presto Version/" + version;
+    return "Opera/9.80 (" + osinfo + " ) Presto/2.12.388 Version/" + version;
   },
-  opera_advanced: function opera_advanced(version, presto_version) {
-    return "Opera (" + osinfo + " ) Presto/" + presto_version + " Version/" + version;
+  opera_advanced: function opera_advanced(version, presto_version, opera_version) {
+    return "Opera/" + opera_version + "(" + osinfo + " ) Presto/" + presto_version + " Version/" + version;
   }
 };
