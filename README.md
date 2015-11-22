@@ -44,8 +44,8 @@ console.log(useragent.firefox("42.0"));
   - opera_version
   - presto_version
 
-### Example
+  ### Example
 
-```js
-console.log(useragent.firefox_advanced(version = '41.0', gecko_version = '20100101'));
-```
+  ```js
+  console.log(useragent.firefox_advanced(version = '41.0', gecko_version = '20100101'));
+  ```
