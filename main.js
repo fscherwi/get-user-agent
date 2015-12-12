@@ -1,29 +1,29 @@
+var os = require('os');
+var agent_platform;
+var agent_arch;
+var os_platform = os.platform();
+var os_arch = os.arch();
 /* istanbul ignore next */
 function get_sys_info() {
-  var os = require('os');
-  var platform;
-  var arch;
-  var os_platform = os.platform();
-  var os_arch = os.arch();
   if (os_platform === 'darwin') {
-    platform = 'Macintosh; Intel Mac OS X ';
-    arch = require('get-osx-version').get();
+    agent_platform = 'Macintosh; Intel Mac OS X ';
+    agent_arch = require('get-osx-version').get();
   } else if (os_platform === 'win32') {
-    platform = 'Windows';
+    agent_platform = 'Windows';
     if (os_arch === 'x64') {
-      arch = ' ; Win64; x64';
+      agent_arch = ' ; Win64; x64';
     } else if (os_arch === 'arm') {
-      arch = '; ARM';
+      agent_arch = '; ARM';
     }
   } else if (os_platform === 'linux') {
-    platform = 'Linux';
+    agent_platform = 'Linux';
     if (os_arch === 'x64') {
-      arch = ' x86_64';
+      agent_arch = ' x86_64';
     } else if (os_arch === 'arm') {
-      arch = '; ARM';
+      agent_arch = '; ARM';
     }
   }
-  return platform + arch;
+  return agent_platform + agent_arch;
 }
 module.exports = {
   chrome: function chrome(version) {
