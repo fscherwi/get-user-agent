@@ -1,5 +1,6 @@
 test.js
 .travis.yml
+.gitignore
 logs
 *.log
 pids
