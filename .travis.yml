@@ -4,6 +4,8 @@ os:
 notifications:
   email: false
 install:
+  - nvm install stable
+  - npm install -g npm
   - npm install
   - npm install coveralls istanbul
 script:
