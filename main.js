@@ -5,23 +5,27 @@ var os_platform = os.platform();
 var os_arch = os.arch();
 /* istanbul ignore next */
 function get_sys_info() {
-  if (os_platform === 'darwin') {
-    agent_platform = 'Macintosh; Intel Mac OS X ';
-    agent_arch = require('get-osx-version').get();
-  } else if (os_platform === 'win32') {
-    agent_platform = 'Windows';
-    if (os_arch === 'x64') {
-      agent_arch = ' ; Win64; x64';
-    } else if (os_arch === 'arm') {
-      agent_arch = '; ARM';
-    }
-  } else if (os_platform === 'linux') {
-    agent_platform = 'Linux';
-    if (os_arch === 'x64') {
-      agent_arch = ' x86_64';
-    } else if (os_arch === 'arm') {
-      agent_arch = '; ARM';
-    }
+  switch (os_platform) {
+    case 'darwin':
+      agent_platform = 'Macintosh; Intel Mac OS X ';
+      agent_arch = require('get-osx-version').get();
+      break;
+    case 'Windows':
+      agent_platform = 'Windows';
+      if (os_arch === 'x64') {
+        agent_arch = ' ; Win64; x64';
+      } else if (os_arch === 'arm') {
+        agent_arch = '; ARM';
+      }
+      break;
+    case 'linux':
+      agent_platform = 'Linux';
+      if (os_arch === 'x64') {
+        agent_arch = ' x86_64';
+      } else if (os_arch === 'arm') {
+        agent_arch = '; ARM';
+      }
+      break;
   }
   return agent_platform + agent_arch;
 }
