@@ -31,21 +31,35 @@ console.log(useragent.firefox("42.0"));
 ```
 
 ## Advanced options
-- Chrome
+### Custom versions
+- **Chrome**
   - version
   - webkit_version
 
-- Firefox
+- **Firefox**
   - version
   - gecko_version
 
-- Opera
+- **Opera**
   - version
   - opera_version
   - presto_version
 
-  ### Example
+  #### Example
 
   ```js
-  console.log(useragent.firefox_advanced(version = '41.0', gecko_version = '20100101'));
+    var useragent = require('get-user-agent');
+
+    console.log(useragent.firefox_advanced(version = '41.0', gecko_version = '20100101'));
+  ```
+
+### Custom system info
+With `sys_info` in the function call!
+
+  #### Example
+
+  ```js
+  var useragent = require('get-user-agent');
+
+  console.log(useragent.firefox_advanced(version = '41.0', gecko_version = '20100101', sys_info='Macintosh; Intel Mac OS X 10.11'));
   ```
