@@ -20,9 +20,11 @@ useragent.your_option(your_version);
 ```
 
 ## Avaible options:
-`firefox`, `chrome` and `opera`
+- `firefox`
+- `chrome`
+- `opera`
 
-## Example script
+### Example script
 
 ```js
 var useragent = require('get-user-agent');
@@ -33,19 +35,19 @@ console.log(useragent.firefox("42.0"));
 ## Advanced options
 ### Custom versions
 - **Chrome**
-  - version
-  - webkit_version
+  - `version`
+  - `webkit_version`
 
 - **Firefox**
-  - version
-  - gecko_version
+  - `version`
+  - `gecko_version`
 
 - **Opera**
-  - version
-  - opera_version
-  - presto_version
+  - `version`
+  - `opera_version`
+  - `presto_version`
 
-##### Example
+#### Example
 
 ```js
 var useragent = require('get-user-agent');
@@ -56,7 +58,7 @@ console.log(useragent.firefox_advanced(version = '41.0', gecko_version = '201001
 ### Custom system info
 With `sys_info` in the function call!
 
-##### Example
+#### Example
 
 ```js
 var useragent = require('get-user-agent');
