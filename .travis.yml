@@ -6,7 +6,7 @@ notifications:
 install:
   - npm install -g npm
   - npm install
-  - npm update coveralls istanbul
+  - npm install coveralls istanbul
 script:
   - npm run test
 after_script:
