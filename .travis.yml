@@ -6,10 +6,13 @@ notifications:
 install:
   - npm install -g npm
   - npm install
-  - npm install coveralls istanbul
+  - npm update coveralls istanbul
 script:
   - npm run test
 after_script:
   - ./node_modules/.bin/istanbul cover test.js
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 sudo: false
+cache:
+  directories:
+    - node_modules
