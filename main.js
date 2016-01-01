@@ -1,11 +1,11 @@
-/* istanbul ignore next */
+/* istanbul ignore next */ /*jshint -W086 */
 function get_sys_info() {
   var os = require('os');
   var os_arch = os.arch();
   switch (os.platform()) {
     case 'darwin':
       return 'Macintosh; Intel Mac OS X ' + require('get-osx-version').get();
-    case 'Windows':
+    case 'windows':
       if (os_arch === 'x64') {
         return 'Windows; Win64; x64';
       } else if (os_arch === 'arm') {
