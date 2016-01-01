@@ -1,33 +1,27 @@
 /* istanbul ignore next */
 function get_sys_info() {
   var os = require('os');
-  var agent_platform;
-  var agent_arch;
-  var os_platform = os.platform();
   var os_arch = os.arch();
-  switch (os_platform) {
+  switch (os.platform()) {
     case 'darwin':
-      agent_platform = 'Macintosh; Intel Mac OS X ';
-      agent_arch = require('get-osx-version').get();
-      break;
+      return 'Macintosh; Intel Mac OS X ' + require('get-osx-version').get();
     case 'Windows':
-      agent_platform = 'Windows';
       if (os_arch === 'x64') {
-        agent_arch = ' ; Win64; x64';
+        return 'Windows; Win64; x64';
       } else if (os_arch === 'arm') {
-        agent_arch = '; ARM';
+        return 'Windows; ARM';
+      } else {
+        return 'Windows';
       }
-      break;
     case 'linux':
-      agent_platform = 'Linux';
       if (os_arch === 'x64') {
-        agent_arch = ' x86_64';
+        return 'Linux; x86_64';
       } else if (os_arch === 'arm') {
-        agent_arch = '; ARM';
+        return 'Linux; ARM';
+      } else {
+        return 'Linux';
       }
-      break;
   }
-  return agent_platform + agent_arch;
 }
 module.exports = {
   chrome: function chrome(version, sys_info) {
