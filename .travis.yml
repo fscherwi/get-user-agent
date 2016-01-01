@@ -4,9 +4,8 @@ os:
 notifications:
   email: false
 install:
-  - npm install -g npm
+  - npm update coveralls istanbul
   - npm install
-  - npm install coveralls istanbul
 script:
   - npm run test
 after_script:
