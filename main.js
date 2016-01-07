@@ -21,6 +21,8 @@ function get_sys_info() {
       } else {
         return 'Linux';
       }
+    default:
+      return;
   }
 }
 module.exports = {
