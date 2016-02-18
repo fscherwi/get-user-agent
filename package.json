@@ -1,6 +1,6 @@
 {
   "name": "get-user-agent",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "easily get a useragent",
   "main": "main.js",
   "scripts": {
@@ -27,5 +27,8 @@
   "devDependencies": {
     "ua-parser": "^0.3.5",
     "uglify-js": "^2.6.1"
-  }
+  },
+  "files": [
+    "main.js"
+  ]
 }

@@ -1,4 +1,4 @@
-/* istanbul ignore next */ /*jshint -W086 */
+/* istanbul ignore next */
 function get_sys_info(sys_info) {
   if (sys_info === undefined) {
     var os = require('os');
@@ -22,8 +22,6 @@ function get_sys_info(sys_info) {
         } else {
           return 'Linux';
         }
-      default:
-        return;
     }
   } else {
     return sys_info;
