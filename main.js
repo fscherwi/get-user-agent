@@ -7,21 +7,21 @@ function get_sys_info(sys_info) {
       case 'darwin':
         return 'Macintosh; Intel Mac OS X ' + require('get-osx-version').get();
       case 'windows':
+        var windows_string = 'Windows';
         if (os_arch === 'x64') {
-          return 'Windows; Win64; x64';
+          windows_string = windows_string + '; Win64; x64';
         } else if (os_arch === 'arm') {
-          return 'Windows; ARM';
-        } else {
-          return 'Windows';
+          windows_string = windows_string + '; ARM';
         }
+        return windows_string;
       case 'linux':
+        var linux_string = 'Linux';
         if (os_arch === 'x64') {
-          return 'Linux; x86_64';
+          linux_string = linux_string + '; x86_64';
         } else if (os_arch === 'arm') {
-          return 'Linux; ARM';
-        } else {
-          return 'Linux';
+          linux_string = linux_string + '; ARM';
         }
+        return linux_string;
     }
   } else {
     return sys_info;
