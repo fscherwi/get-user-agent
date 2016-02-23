@@ -1,5 +1,4 @@
-/* istanbul ignore next */
-function get_sys_info(sys_info) {
+function get_sys_info(sys_info) {/* istanbul ignore next */
   if (sys_info) {
     return sys_info;
   } else {
