@@ -42,5 +42,11 @@ module.exports = {
   },
   opera_advanced: function opera_advanced(version, presto_version, opera_version, sys_info) {
     return 'Opera/' + opera_version + ' (' + get_sys_info(sys_info) + ') Presto/' + presto_version + ' Version/' + version;
+  },
+  safari: function safari(version, sys_info) {
+    return 'Mozilla/5.0 (' + get_sys_info(sys_info) + ') AppleWebKit/601.4.4 (KHTML, like Gecko) Version/' + version + ' Safari/601.4.4';
+  },
+  safari_advanced: function safari_advanced(version, sys_info, webkit_build_version, safari_build_version) {
+    return 'Mozilla/5.0 (' + get_sys_info(sys_info) + ') AppleWebKit/' + webkit_build_version + ' (KHTML, like Gecko) Version/' + version + ' Safari/' + safari_build_version;
   }
 };
