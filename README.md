@@ -23,6 +23,7 @@ useragent.your_option(your_version);
 - `firefox`
 - `chrome`
 - `opera`
+- `safari`
 
 ### Example script
 
@@ -46,6 +47,11 @@ console.log(useragent.firefox("42.0"));
   - `version`
   - `opera_version`
   - `presto_version`
+
+- **Safari**
+  - `version`
+  - `webkit_build_version`
+  - `safari_build_version`
 
 #### Example
 
