@@ -13,7 +13,13 @@
     "url": "git+https://github.com/fscherwi/get-user-agent.git"
   },
   "keywords": [
-    "useragent"
+    "useragent",
+    "user-agent",
+    "browser",
+    "firefox",
+    "chrome",
+    "opera",
+    "safari"
   ],
   "author": "fscherwi",
   "license": "MIT",
@@ -29,6 +35,8 @@
     "uglify-js": "^2.7.5"
   },
   "files": [
+    "README.md",
+    "LICENSE",
     "main.js"
   ]
 }
