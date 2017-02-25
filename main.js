@@ -1,4 +1,4 @@
-function get_sys_info(sys_info) {/* istanbul ignore next */
+function get_sys_info(sys_info) { /* istanbul ignore next */
   if (sys_info) {
     return sys_info;
   } else {
@@ -9,15 +9,23 @@ function get_sys_info(sys_info) {/* istanbul ignore next */
       case 'windows':
         if (os.arch() === 'x64') {
           return 'Windows; Win64; x64';
+        } else if (os.arch() === 'x86') {
+          return 'Windows; Win32; x86';
         } else if (os.arch() === 'arm') {
           return 'Windows; ARM';
+        } else {
+          return 'Windows';
         }
         break;
       case 'linux':
         if (os.arch() === 'x64') {
           return 'Linux; x86_64';
+        } else if (os.arch() === 'i686') {
+          return 'Linux; i686';
         } else if (os.arch() === 'arm') {
           return 'Linux; ARM';
+        } else {
+          return 'Linux';
         }
         break;
     }
