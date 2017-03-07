@@ -7,25 +7,27 @@ function get_sys_info(sys_info) { /* istanbul ignore next */
       case 'darwin':
         return 'Macintosh; Intel Mac OS X ' + require('get-osx-version').get();
       case 'windows':
-        if (os.arch() === 'x64') {
-          return 'Windows; Win64; x64';
-        } else if (os.arch() === 'x86') {
-          return 'Windows; Win32; x86';
-        } else if (os.arch() === 'arm') {
-          return 'Windows; ARM';
-        } else {
-          return 'Windows';
+        switch (os.arch()) {
+          case 'x64':
+            return 'Windows; Win64; x64';
+          case 'x86':
+            return 'Windows; Win32; x86';
+          case 'arm':
+            return 'Windows; ARM';
+          default:
+            return 'Windows';
         }
         break;
       case 'linux':
-        if (os.arch() === 'x64') {
-          return 'Linux; x86_64';
-        } else if (os.arch() === 'i686') {
-          return 'Linux; i686';
-        } else if (os.arch() === 'arm') {
-          return 'Linux; ARM';
-        } else {
-          return 'Linux';
+        switch (os.arch()) {
+          case 'x64':
+            return 'Linux; x86_64';
+          case 'i686':
+            return 'Linux; i686';
+          case 'arm':
+            return 'Linux; ARM';
+          default:
+            return 'Linux';
         }
         break;
     }
@@ -51,7 +53,7 @@ module.exports = {
     return 'Opera/' + opera_version + ' (' + get_sys_info(sys_info) + ') Presto/' + presto_version + ' Version/' + version;
   },
   safari: function safari(version, sys_info) {
-    return 'Mozilla/5.0 (' + get_sys_info(sys_info) + ') AppleWebKit/601.4.4 (KHTML, like Gecko) Version/' + version + ' Safari/601.4.4';
+    return 'Mozilla/5.0 (' + get_sys_info(sys_info) + ') AppleWebKit/601.4.8 (KHTML, like Gecko) Version/' + version + ' Safari/601.4.8';
   },
   safari_advanced: function safari_advanced(version, webkit_build_version, safari_build_version, sys_info) {
     return 'Mozilla/5.0 (' + get_sys_info(sys_info) + ') AppleWebKit/' + webkit_build_version + ' (KHTML, like Gecko) Version/' + version + ' Safari/' + safari_build_version;
