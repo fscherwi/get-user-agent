@@ -42,31 +42,31 @@ console.log(useragent.firefox("42.0"));
 - **Chrome**
 
   - `version`
-  - `webkit_version`
+  - `WebkitVersion`
 
 - **Firefox**
 
   - `version`
-  - `gecko_version`
+  - `GeckoVersion`
 
 - **Opera**
 
   - `version`
-  - `opera_version`
-  - `presto_version`
+  - `OperaVersion`
+  - `PrestoVersion`
 
 - **Safari**
 
   - `version`
-  - `webkit_build_version`
-  - `safari_build_version`
+  - `WebkitBuildVersion`
+  - `SafariBuildVersion`
 
 #### Example
 
 ```javascript
 var useragent = require('get-user-agent');
 
-console.log(useragent.firefox_advanced(version = '41.0', gecko_version = '20100101'));
+console.log(useragent.firefox_advanced(version = '41.0', GeckoVersion = '20100101'));
 ```
 
 ### Custom system information
@@ -78,5 +78,5 @@ With `sys_info` in the function call!
 ```javascript
 var useragent = require('get-user-agent');
 
-console.log(useragent.firefox_advanced(version = '41.0', gecko_version = '20100101', sys_info='Macintosh; Intel Mac OS X 10.11'));
+console.log(useragent.firefox_advanced(version = '41.0', GeckoVersion = '20100101', SysInfo = 'Macintosh; Intel Mac OS X 10.11'));
 ```
