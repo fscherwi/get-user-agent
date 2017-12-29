@@ -17,7 +17,6 @@ function GetSysInfo(SysInfo) { /* istanbul ignore next */
       default:
         return "Windows";
       }
-      break;
     case "linux":
       switch (os.arch()) {
       case "x64":
@@ -29,7 +28,6 @@ function GetSysInfo(SysInfo) { /* istanbul ignore next */
       default:
         return "Linux";
       }
-      break;
     }
   }
 }

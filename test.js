@@ -13,4 +13,3 @@ var agents = [
 agents.forEach(function (UserAgent) {
   console.log("%s (%s):\t %s", parser.parse(UserAgent).ua.toString(), parser.parse(UserAgent).os.toString(), UserAgent);
 });
-console.log("");
