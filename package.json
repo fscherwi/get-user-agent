@@ -1,6 +1,6 @@
 {
   "name": "get-user-agent",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "description": "easily get a useragent",
   "main": "main.js",
   "scripts": {
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/fscherwi/get-user-agent#readme",
   "dependencies": {
-    "get-osx-version": "^1.5.1"
+    "get-osx-version": "^1.5.2"
   },
   "devDependencies": {
     "ua-parser": "^0.3.5"
