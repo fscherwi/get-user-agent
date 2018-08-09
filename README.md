@@ -1,8 +1,8 @@
 # get-user-agent
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/fscherwi/get-user-agent.svg)](https://greenkeeper.io/) [![Build Status](https://travis-ci.org/fscherwi/get-user-agent.svg?branch=master)](https://travis-ci.org/fscherwi/get-user-agent) [![Coverage Status](https://coveralls.io/repos/fscherwi/get-user-agent/badge.svg?branch=master&service=github)](https://coveralls.io/github/fscherwi/get-user-agent?branch=master) [![Dependency Status](https://david-dm.org/fscherwi/get-user-agent.svg)](https://david-dm.org/fscherwi/get-user-agent) [![bitHound Score](https://www.bithound.io/github/fscherwi/get-user-agent/badges/score.svg)](https://www.bithound.io/github/fscherwi/get-user-agent)
+[![Build Status](https://travis-ci.org/fscherwi/get-user-agent.svg?branch=master)](https://travis-ci.org/fscherwi/get-user-agent) [![Coverage Status](https://coveralls.io/repos/fscherwi/get-user-agent/badge.svg?branch=master&service=github)](https://coveralls.io/github/fscherwi/get-user-agent?branch=master) [![Dependency Status](https://david-dm.org/fscherwi/get-user-agent.svg)](https://david-dm.org/fscherwi/get-user-agent)
 
-Easy get an useragent from the browser you like!
+Easily get an user agent from a browser you like!
 
 It's an easy to use and small npm package!
 
@@ -22,10 +22,10 @@ useragent.your_option(your_version);
 
 ## Avaible options:
 
-- `firefox`
-- `chrome`
-- `opera`
-- `safari`
+-   `firefox`
+-   `chrome`
+-   `opera`
+-   `safari`
 
 ### Example script
 
@@ -39,27 +39,26 @@ console.log(useragent.firefox("42.0"));
 
 ### Custom versions
 
-- **Chrome**
+-   **Chrome**
 
-  - `version`
-  - `WebkitVersion`
+    -   `version`
+    -   `WebkitVersion`
 
-- **Firefox**
+-   **Firefox**
 
-  - `version`
-  - `GeckoVersion`
+    -   `version`
+    -   `GeckoVersion`
 
-- **Opera**
+-   **Opera**
 
-  - `version`
-  - `OperaVersion`
-  - `PrestoVersion`
+    -   `version`
+    -   `OperaVersion`
+    -   `PrestoVersion`
 
-- **Safari**
-
-  - `version`
-  - `WebkitBuildVersion`
-  - `SafariBuildVersion`
+-   **Safari**
+    -   `version`
+    -   `WebkitBuildVersion`
+    -   `SafariBuildVersion`
 
 #### Example
 
@@ -71,7 +70,7 @@ console.log(useragent.firefox_advanced(version = '41.0', GeckoVersion = '2010010
 
 ### Custom system information
 
-With `sys_info` in the function call!
+With `SysInfo` in the function call!
 
 #### Example
 

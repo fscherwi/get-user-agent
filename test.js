@@ -1,5 +1,6 @@
 var useragent = require("./main.js");
-var parser = require("ua-parser");
+var parser = require('ua-parser-js');
+var ua;
 var agents = [
   useragent.chrome("41.0.2228.0"),
   useragent.chromeAdvanced("41.0.2228.0", "537.36"),
@@ -10,6 +11,7 @@ var agents = [
   useragent.safari("10.0.3"),
   useragent.safariAdvanced("10.0.3", "602.4.8", "602.4.8")
 ];
-agents.forEach(function (UserAgent) {
-  console.log("%s (%s):\t %s", parser.parse(UserAgent).ua.toString(), parser.parse(UserAgent).os.toString(), UserAgent);
+agents.forEach(function(UserAgent) {
+  ua = parser(UserAgent);
+  console.log("%s %s (%s %s):\t %s", ua.browser.name, ua.browser.version, ua.os.name, ua.os.version, UserAgent);
 });
