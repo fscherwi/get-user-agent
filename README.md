@@ -6,76 +6,146 @@ Easily get an user agent from a browser you like!
 
 It's an easy to use and small npm package!
 
-# Install
+## Install
 
 ```bash
 npm install --save get-user-agent
 ```
 
-# Usage
+## Example Usage
 
 ```javascript
 var useragent = require('get-user-agent');
 
-useragent.your_option(your_version);
+useragent.firefox(62);
 ```
 
-## Avaible options:
-
--   `firefox`
--   `chrome`
--   `opera`
--   `safari`
-
-### Example script
+**with custom system information**
 
 ```javascript
 var useragent = require('get-user-agent');
 
-console.log(useragent.firefox("42.0"));
+useragent.firefox(62, 'Macintosh; Intel Mac OS X 10.14');
 ```
 
-## Advanced options
+## API
 
-### Custom versions
+### chrome(version, SysInfo)
 
--   **Chrome**
+**version**
 
-    -   `version`
-    -   `WebkitVersion`
+Type: `String`, `Number`
 
--   **Firefox**
+**SysInfo**
 
-    -   `version`
-    -   `GeckoVersion`
+Type: `String`
 
--   **Opera**
+Default: data from system
 
-    -   `version`
-    -   `OperaVersion`
-    -   `PrestoVersion`
+### chromeAdvanced(version, WebkitVersion, SysInfo)
 
--   **Safari**
-    -   `version`
-    -   `WebkitBuildVersion`
-    -   `SafariBuildVersion`
+**version**
 
-#### Example
+Type: `String`, `Number`
 
-```javascript
-var useragent = require('get-user-agent');
+**WebkitVersion**
 
-console.log(useragent.firefox_advanced(version = '41.0', GeckoVersion = '20100101'));
-```
+Type: `String`, `Number`
 
-### Custom system information
+**SysInfo**
 
-With `SysInfo` in the function call!
+Type: `String`
 
-#### Example
+Default: data from system
 
-```javascript
-var useragent = require('get-user-agent');
+### firefox(version, SysInfo)
 
-console.log(useragent.firefox_advanced(version = '41.0', GeckoVersion = '20100101', SysInfo = 'Macintosh; Intel Mac OS X 10.11'));
-```
+**version**
+
+Type: `String`, `Number`
+
+**SysInfo**
+
+Type: `String`
+
+Default: data from system
+
+### firefoxAdvanced(version, GeckoVersion, SysInfo)
+
+**version**
+
+Type: `String`, `Number`
+
+**GeckoVersion**
+
+Type: `String`, `Number`
+
+**SysInfo**
+
+Type: `String`
+
+Default: data from system
+
+### opera(version, SysInfo)
+
+**version**
+
+Type: `String`, `Number`
+
+**SysInfo**
+
+Type: `String`
+
+Default: data from system
+
+### operaAdvanced(version, OperaVersion, PrestoVersion, SysInfo)
+
+**version**
+
+Type: `String`, `Number`
+
+**OperaVersion**
+
+Type: `String`, `Number`
+
+**PrestoVersion**
+
+Type: `String`, `Number`
+
+**SysInfo**
+
+Type: `String`
+
+Default: data from system
+
+### safari(version, SysInfo)
+
+**version**
+
+Type: `String`, `Number`
+
+**SysInfo**
+
+Type: `String`
+
+Default: data from system
+
+### safariAdvanced(version, WebkitBuildVersion, SafariBuildVersion, SysInfo)
+
+**version**
+
+Type: `String`, `Number`
+
+**WebkitBuildVersion**
+
+Type: `String`, `Number`
+
+**SafariBuildVersion**
+
+Type: `String`, `Number`
+
+**SysInfo**
+
+Type: `String`
+
+Default: data from system

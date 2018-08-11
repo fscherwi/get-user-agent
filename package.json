@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/fscherwi/get-user-agent#readme",
   "dependencies": {
-    "get-osx-version": "^1.5.2"
+    "get-osx-version": "^1.6.0"
   },
   "devDependencies": {
     "ua-parser-js": "^0.7.18"
