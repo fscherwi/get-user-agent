@@ -17,7 +17,7 @@ npm install --save get-user-agent
 ```javascript
 var useragent = require('get-user-agent');
 
-useragent.firefox(62);
+console.log(useragent.firefox(62));
 ```
 
 **with custom system information**
@@ -25,7 +25,15 @@ useragent.firefox(62);
 ```javascript
 var useragent = require('get-user-agent');
 
-useragent.firefox(62, 'Macintosh; Intel Mac OS X 10.14');
+console.log(useragent.firefox(62, 'Macintosh; Intel Mac OS X 10.14'));
+```
+
+**advanced usage**
+
+```javascript
+var useragent = require('get-user-agent');
+
+console.log(useragent.firefoxAdvanced(version = '41.0', GeckoVersion = '20100101', SysInfo = 'Macintosh; Intel Mac OS X 10.11'));
 ```
 
 ## API
