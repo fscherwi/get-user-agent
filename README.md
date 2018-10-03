@@ -33,24 +33,24 @@ console.log(useragent.firefox(62, 'Macintosh; Intel Mac OS X 10.14'));
 ```javascript
 var useragent = require('get-user-agent');
 
-console.log(useragent.firefoxAdvanced(version = '41.0', GeckoVersion = '20100101', SysInfo = 'Macintosh; Intel Mac OS X 10.11'));
+console.log(useragent.firefoxAdvanced(version = '41.0', GeckoVersion = '20100101', sysInfo = 'Macintosh; Intel Mac OS X 10.11'));
 ```
 
 ## API
 
-### chrome(version, SysInfo)
+### chrome(version, sysInfo)
 
 **version**
 
 Type: `String`, `Number`
 
-**SysInfo**
+**sysInfo**
 
 Type: `String`
 
 Default: data from system
 
-### chromeAdvanced(version, WebkitVersion, SysInfo)
+### chromeAdvanced(version, WebkitVersion, sysInfo)
 
 **version**
 
@@ -60,25 +60,25 @@ Type: `String`, `Number`
 
 Type: `String`, `Number`
 
-**SysInfo**
+**sysInfo**
 
 Type: `String`
 
 Default: data from system
 
-### firefox(version, SysInfo)
+### firefox(version, sysInfo)
 
 **version**
 
 Type: `String`, `Number`
 
-**SysInfo**
+**sysInfo**
 
 Type: `String`
 
 Default: data from system
 
-### firefoxAdvanced(version, GeckoVersion, SysInfo)
+### firefoxAdvanced(version, GeckoVersion, sysInfo)
 
 **version**
 
@@ -88,25 +88,25 @@ Type: `String`, `Number`
 
 Type: `String`, `Number`
 
-**SysInfo**
+**sysInfo**
 
 Type: `String`
 
 Default: data from system
 
-### opera(version, SysInfo)
+### opera(version, sysInfo)
 
 **version**
 
 Type: `String`, `Number`
 
-**SysInfo**
+**sysInfo**
 
 Type: `String`
 
 Default: data from system
 
-### operaAdvanced(version, OperaVersion, PrestoVersion, SysInfo)
+### operaAdvanced(version, OperaVersion, PrestoVersion, sysInfo)
 
 **version**
 
@@ -120,25 +120,25 @@ Type: `String`, `Number`
 
 Type: `String`, `Number`
 
-**SysInfo**
+**sysInfo**
 
 Type: `String`
 
 Default: data from system
 
-### safari(version, SysInfo)
+### safari(version, sysInfo)
 
 **version**
 
 Type: `String`, `Number`
 
-**SysInfo**
+**sysInfo**
 
 Type: `String`
 
 Default: data from system
 
-### safariAdvanced(version, WebkitBuildVersion, SafariBuildVersion, SysInfo)
+### safariAdvanced(version, WebkitBuildVersion, SafariBuildVersion, sysInfo)
 
 **version**
 
@@ -152,7 +152,7 @@ Type: `String`, `Number`
 
 Type: `String`, `Number`
 
-**SysInfo**
+**sysInfo**
 
 Type: `String`
 
