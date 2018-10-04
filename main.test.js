@@ -63,3 +63,11 @@ test('Safari Advanced', () => {
   expect(ua.browser.name).toBe('Safari');
   expect(ua.browser.version).toBe(version);
 });
+
+test('sysInfo', () => {
+  var version = '41.0';
+  var sysInfo = 'Macintosh; Intel Mac OS X 10.11';
+  ua = parser(useragent.firefox(version, sysInfo));
+  expect(ua.browser.name).toBe('Firefox');
+  expect(ua.browser.version).toBe(version);
+});
