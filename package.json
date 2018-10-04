@@ -4,7 +4,7 @@
   "description": "easily get a useragent",
   "main": "main.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage --collectCoverageFrom=*.js --collectCoverageFrom=!sysInfo.js"
   },
   "repository": {
     "type": "git",
