@@ -1,5 +1,5 @@
 module.exports = {
-    get: function get() {
+  get: function get() {
     var os = require("os");
     switch (os.platform()) {
       case "darwin":
