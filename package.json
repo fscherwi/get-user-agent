@@ -1,6 +1,6 @@
 {
   "name": "get-user-agent",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "easily get a useragent",
   "main": "main.js",
   "scripts": {
@@ -39,7 +39,7 @@
     "README.md",
     "LICENSE",
     "main.js",
-    "sysInfo.js"
+    "sys-info.js"
   ],
   "xo": {
     "ignores": "*.test.js"
