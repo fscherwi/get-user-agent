@@ -1,5 +1,5 @@
 module.exports = function () {
-	const os = require('os');/* istanbul ignore next */
+	const os = require('os');
 	switch (os.platform()) {
 		case 'darwin':
 			return 'Macintosh; Intel Mac OS X ' + require('get-osx-version').get();
