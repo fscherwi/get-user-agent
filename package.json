@@ -1,10 +1,11 @@
 {
   "name": "get-user-agent",
-  "version": "3.1.1",
+  "version": "3.2.0",
   "description": "easily get a useragent",
   "main": "main.js",
   "scripts": {
-    "test": "jest --coverage --collectCoverageFrom=*.js --collectCoverageFrom=!sysInfo.js"
+    "test": "jest --coverage --collectCoverageFrom=*.js --collectCoverageFrom=!sysInfo.js",
+    "lint": "xo"
   },
   "repository": {
     "type": "git",
@@ -31,12 +32,16 @@
   "devDependencies": {
     "coveralls": "^3.0.2",
     "jest": "^23.6.0",
-    "ua-parser-js": "^0.7.19"
+    "ua-parser-js": "^0.7.19",
+    "xo": "^0.23.0"
   },
   "files": [
     "README.md",
     "LICENSE",
     "main.js",
     "sysInfo.js"
-  ]
+  ],
+  "xo": {
+    "ignores": "*.test.js"
+  }
 }
