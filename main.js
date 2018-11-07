@@ -2,7 +2,7 @@ function getsysInfo(sysInfo) {
 	if (sysInfo) {
 		return sysInfo;
 	}
-	return require('./sys-info')();
+	return require('./sys-info');
 }
 
 function chrome(version, sysInfo) {

@@ -1,8 +1,8 @@
-module.exports = function () {
+function get() {
 	const os = require('os');
 	switch (os.platform()) {
 		case 'darwin':
-			return 'Macintosh; Intel Mac OS X ' + require('get-osx-version').get();
+			return 'Macintosh; Intel Mac OS X ' + require('get-osx-version');
 		case 'windows':
 			switch (os.arch()) {
 				case 'x64':
@@ -28,4 +28,6 @@ module.exports = function () {
 		default:
 			return '';
 	}
-};
+}
+
+module.exports = get();

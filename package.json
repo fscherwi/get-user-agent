@@ -1,7 +1,7 @@
 {
   "name": "get-user-agent",
-  "version": "3.2.1",
-  "description": "easily get a useragent",
+  "version": "3.2.2",
+  "description": "easily generate a useragent",
   "main": "main.js",
   "scripts": {
     "test": "jest --coverage --collectCoverageFrom=*.js --collectCoverageFrom=!sys-info.js",
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/fscherwi/get-user-agent#readme",
   "dependencies": {
-    "get-osx-version": "^1.6.0"
+    "get-osx-version": "^2.0.0"
   },
   "devDependencies": {
     "coveralls": "^3.0.2",
