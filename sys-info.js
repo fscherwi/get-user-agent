@@ -14,6 +14,7 @@ function get() {
 				default:
 					return 'Windows';
 			}
+
 		case 'linux':
 			switch (os.arch()) {
 				case 'x64':
@@ -25,6 +26,7 @@ function get() {
 				default:
 					return 'Linux';
 			}
+
 		default:
 			return '';
 	}

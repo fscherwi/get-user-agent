@@ -2,6 +2,7 @@ function getsysInfo(sysInfo) {
 	if (sysInfo) {
 		return sysInfo;
 	}
+
 	return require('./sys-info');
 }
 
