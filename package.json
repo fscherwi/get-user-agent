@@ -33,7 +33,7 @@
     "coveralls": "^3.0.2",
     "jest": "^23.6.0",
     "ua-parser-js": "^0.7.19",
-    "xo": "^0.23.0"
+    "xo": "^0.24.0"
   },
   "files": [
     "README.md",
