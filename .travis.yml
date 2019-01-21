@@ -15,4 +15,4 @@ script:
   - npm run lint
   - npm run test
 after_success:
-  - cat ./coverage/lcov.info | node_modules/.bin/coveralls --verbose
+  - cat ./coverage/lcov.info | node_modules/.bin/coveralls

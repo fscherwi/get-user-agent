@@ -44,6 +44,7 @@
   ],
   "nyc": {
     "reporter": [
+      "lcov",
       "text-lcov"
     ],
     "ignores": "sys-info.js"
