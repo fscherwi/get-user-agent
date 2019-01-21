@@ -47,6 +47,8 @@
       "lcov",
       "text-lcov"
     ],
-    "ignores": "sys-info.js"
+    "exclude": [
+      "sys-info.js"
+    ],
   }
 }
