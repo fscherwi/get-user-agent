@@ -1,10 +1,13 @@
-var useragent = require('./main.js');
-var sysInfo = require('./sys-info.js');
-var parser = require('ua-parser-js');
-var ua;
+import test from 'ava';
 
-test('sysInfo', () => {
-  var version = '41.0';
-  ua = parser(useragent.firefox(version, sysInfo));
-  expect(ua.browser.version).toBe(version);
+const parser = require('ua-parser-js');
+const useragent = require('./main.js');
+const sysInfo = require('./sys-info.js');
+
+let ua;
+
+test('sysInfo', t => {
+	const version = '41.0';
+	ua = parser(useragent.firefox(version, sysInfo));
+	t.is(ua.browser.version, version);
 });

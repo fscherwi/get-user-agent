@@ -4,7 +4,7 @@
   "description": "easily generate a useragent",
   "main": "main.js",
   "scripts": {
-    "test": "jest --coverage --collectCoverageFrom=*.js --collectCoverageFrom=!sys-info.js",
+    "test": "nyc ava",
     "lint": "xo"
   },
   "repository": {
@@ -30,8 +30,9 @@
     "get-osx-version": "^2.0.0"
   },
   "devDependencies": {
+    "ava": "^1.1.0",
     "coveralls": "^3.0.2",
-    "jest": "^23.6.0",
+    "nyc": "^13.1.0",
     "ua-parser-js": "^0.7.19",
     "xo": "^0.24.0"
   },
@@ -41,7 +42,10 @@
     "main.js",
     "sys-info.js"
   ],
-  "xo": {
-    "ignores": "*.test.js"
+  "nyc": {
+    "reporter": [
+      "text-lcov"
+    ],
+    "ignores": "sys-info.js"
   }
 }
