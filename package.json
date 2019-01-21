@@ -49,6 +49,6 @@
     ],
     "exclude": [
       "sys-info.js"
-    ],
+    ]
   }
 }
