@@ -8,6 +8,7 @@ node_js:
   - "--lts"
 notifications:
   email: false
+cache: npm
 install:
   - npm ci
 script:
