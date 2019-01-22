@@ -44,8 +44,7 @@
   ],
   "nyc": {
     "reporter": [
-      "lcov",
-      "text-lcov"
+      "lcov"
     ],
     "exclude": [
       "sys-info.js"
