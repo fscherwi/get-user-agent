@@ -32,7 +32,7 @@
   "devDependencies": {
     "ava": "^1.2.0",
     "coveralls": "^3.0.2",
-    "nyc": "^13.1.0",
+    "nyc": "^13.2.0",
     "ua-parser-js": "^0.7.19",
     "xo": "^0.24.0"
   },
