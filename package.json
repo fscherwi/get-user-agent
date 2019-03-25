@@ -30,8 +30,8 @@
     "get-osx-version": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "^1.2.1",
-    "coveralls": "^3.0.2",
+    "ava": "^1.4.0",
+    "coveralls": "^3.0.3",
     "nyc": "^13.3.0",
     "ua-parser-js": "^0.7.19",
     "xo": "^0.24.0"
