@@ -13,145 +13,146 @@ npm install --save get-user-agent
 ## Example Usage
 
 ```javascript
-var useragent = require('get-user-agent');
+const useragent = require('get-user-agent');
 
 console.log(useragent.firefox(62));
 ```
 
-**with custom system information**
+## Functions
+
+<dl>
+<dt><a href="#chrome">chrome(version, sysInfo)</a> ⇒ <code>string</code></dt>
+<dd><p>Chrome Useragent</p>
+</dd>
+<dt><a href="#chromeAdvanced">chromeAdvanced(version, webkitVersion, sysInfo)</a> ⇒ <code>string</code></dt>
+<dd><p>Chrome Useragent with advanced options</p>
+</dd>
+<dt><a href="#firefox">firefox(version, sysInfo)</a> ⇒ <code>string</code></dt>
+<dd><p>Safari Useragent</p>
+</dd>
+<dt><a href="#firefoxAdvanced">firefoxAdvanced(version, geckoVersion, sysInfo)</a> ⇒ <code>string</code></dt>
+<dd><p>Firefox Useragent with advanced options</p>
+</dd>
+<dt><a href="#opera">opera(version, sysInfo)</a> ⇒ <code>string</code></dt>
+<dd><p>Opera Useragent</p>
+</dd>
+<dt><a href="#operaAdvanced">operaAdvanced(version, prestoVersion, operaVersion, sysInfo)</a> ⇒ <code>string</code></dt>
+<dd><p>Opera Useragent with advanced options</p>
+</dd>
+<dt><a href="#safari">safari(version, sysInfo)</a> ⇒ <code>string</code></dt>
+<dd><p>Safari Useragent</p>
+</dd>
+<dt><a href="#safariAdvanced">safariAdvanced(version, webkitBuildVersion, safariBuildVersion, sysInfo)</a> ⇒ <code>string</code></dt>
+<dd><p>Safari Useragent with advanced options</p>
+</dd>
+</dl>
+
+<a name="chrome"></a>
+
+## chrome(version, sysInfo) ⇒ <code>string</code>
+Chrome Useragent
+
+**Kind**: global function  
+**Returns**: <code>string</code> - Useragent  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| version | <code>number</code> \| <code>string</code> | Browser version |
+| sysInfo | <code>string</code> | System info |
+
+<a name="chromeAdvanced"></a>
+
+## chromeAdvanced(version, webkitVersion, sysInfo) ⇒ <code>string</code>
+Chrome Useragent with advanced options
+
+**Kind**: global function  
+**Returns**: <code>string</code> - Useragent  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| version | <code>number</code> \| <code>string</code> | Browser version |
+| webkitVersion | <code>number</code> \| <code>string</code> | Webkit version |
+| sysInfo | <code>string</code> | System info |
+
+<a name="firefox"></a>
+
+## firefox(version, sysInfo) ⇒ <code>string</code>
+Safari Useragent
+
+**Kind**: global function  
+**Returns**: <code>string</code> - Useragent  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| version | <code>number</code> \| <code>string</code> | Browser version |
+| sysInfo | <code>string</code> | System info |
+
+<a name="firefoxAdvanced"></a>
+
+## firefoxAdvanced(version, geckoVersion, sysInfo) ⇒ <code>string</code>
+Firefox Useragent with advanced options
+
+**Kind**: global function  
+**Returns**: <code>string</code> - Useragent  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| version | <code>number</code> \| <code>string</code> | Browser version |
+| geckoVersion | <code>number</code> \| <code>string</code> | Gecko version |
+| sysInfo | <code>string</code> | System info |
+
+<a name="opera"></a>
+
+## opera(version, sysInfo) ⇒ <code>string</code>
+Opera Useragent
+
+**Kind**: global function  
+**Returns**: <code>string</code> - Useragent  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| version | <code>number</code> \| <code>string</code> | Browser version |
+| sysInfo | <code>string</code> | System info |
+
+<a name="operaAdvanced"></a>
+
+## operaAdvanced(version, prestoVersion, operaVersion, sysInfo) ⇒ <code>string</code>
+Opera Useragent with advanced options
+
+**Kind**: global function  
+**Returns**: <code>string</code> - Useragent  
 
-```javascript
-var useragent = require('get-user-agent');
+| Param | Type | Description |
+| --- | --- | --- |
+| version | <code>number</code> \| <code>string</code> | Browser version |
+| prestoVersion | <code>number</code> \| <code>string</code> | Presto version |
+| operaVersion | <code>number</code> \| <code>string</code> | Opera version |
+| sysInfo | <code>string</code> | System info |
 
-console.log(useragent.firefox(62, 'Macintosh; Intel Mac OS X 10.14'));
-```
+<a name="safari"></a>
 
-**advanced usage**
+## safari(version, sysInfo) ⇒ <code>string</code>
+Safari Useragent
 
-```javascript
-var useragent = require('get-user-agent');
+**Kind**: global function  
+**Returns**: <code>string</code> - Useragent  
 
-console.log(useragent.firefoxAdvanced(version = '41.0', geckoVersion = '20100101', sysInfo = 'Macintosh; Intel Mac OS X 10.11'));
-```
+| Param | Type | Description |
+| --- | --- | --- |
+| version | <code>number</code> \| <code>string</code> | Browser version |
+| sysInfo | <code>string</code> | System info |
 
-## API
+<a name="safariAdvanced"></a>
 
-### chrome(version, sysInfo)
+## safariAdvanced(version, webkitBuildVersion, safariBuildVersion, sysInfo) ⇒ <code>string</code>
+Safari Useragent with advanced options
 
-**version**
+**Kind**: global function  
+**Returns**: <code>string</code> - Useragent  
 
-Type: `String`, `Number`
-
-**sysInfo**
-
-Type: `String`
-
-Default: data from system
-
-### chromeAdvanced(version, webkitVersion, sysInfo)
-
-**version**
-
-Type: `String`, `Number`
-
-**webkitVersion**
-
-Type: `String`, `Number`
-
-**sysInfo**
-
-Type: `String`
-
-Default: data from system
-
-### firefox(version, sysInfo)
-
-**version**
-
-Type: `String`, `Number`
-
-**sysInfo**
-
-Type: `String`
-
-Default: data from system
-
-### firefoxAdvanced(version, geckoVersion, sysInfo)
-
-**version**
-
-Type: `String`, `Number`
-
-**geckoVersion**
-
-Type: `String`, `Number`
-
-**sysInfo**
-
-Type: `String`
-
-Default: data from system
-
-### opera(version, sysInfo)
-
-**version**
-
-Type: `String`, `Number`
-
-**sysInfo**
-
-Type: `String`
-
-Default: data from system
-
-### operaAdvanced(version, operaVersion, prestoVersion, sysInfo)
-
-**version**
-
-Type: `String`, `Number`
-
-**operaVersion**
-
-Type: `String`, `Number`
-
-**prestoVersion**
-
-Type: `String`, `Number`
-
-**sysInfo**
-
-Type: `String`
-
-Default: data from system
-
-### safari(version, sysInfo)
-
-**version**
-
-Type: `String`, `Number`
-
-**sysInfo**
-
-Type: `String`
-
-Default: data from system
-
-### safariAdvanced(version, webkitBuildVersion, safariBuildVersion, sysInfo)
-
-**version**
-
-Type: `String`, `Number`
-
-**webkitBuildVersion**
-
-Type: `String`, `Number`
-
-**safariBuildVersion**
-
-Type: `String`, `Number`
-
-**sysInfo**
-
-Type: `String`
-
-Default: data from system
+| Param | Type | Description |
+| --- | --- | --- |
+| version | <code>number</code> \| <code>string</code> | Browser version |
+| webkitBuildVersion | <code>number</code> \| <code>string</code> | Webkit build version |
+| safariBuildVersion | <code>number</code> \| <code>string</code> | Safari build version |
+| sysInfo | <code>string</code> | System info |

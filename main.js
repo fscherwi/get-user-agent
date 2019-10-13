@@ -1,6 +1,8 @@
 const {getSysInfo} = require('./sys-info');
 
 /**
+ * Chrome Useragent
+ *
  * @param {number | string} version Browser version
  * @param {string} sysInfo System info
  * @returns {string} Useragent
@@ -10,6 +12,8 @@ function chrome(version, sysInfo) {
 }
 
 /**
+ * Chrome Useragent with advanced options
+ *
  * @param {number | string} version Browser version
  * @param {number | string} webkitVersion Webkit version
  * @param {string} sysInfo System info
@@ -20,6 +24,8 @@ function chromeAdvanced(version, webkitVersion, sysInfo) {
 }
 
 /**
+ * Safari Useragent
+ *
  * @param {number | string} version Browser version
  * @param {string} sysInfo System info
  * @returns {string} Useragent
@@ -29,6 +35,8 @@ function firefox(version, sysInfo) {
 }
 
 /**
+ * Firefox Useragent with advanced options
+ *
  * @param {number | string} version Browser version
  * @param {number | string} geckoVersion Gecko version
  * @param {string} sysInfo System info
@@ -39,6 +47,8 @@ function firefoxAdvanced(version, geckoVersion, sysInfo) {
 }
 
 /**
+ * Opera Useragent
+ *
  * @param {number | string} version Browser version
  * @param {string} sysInfo System info
  * @returns {string} Useragent
@@ -48,6 +58,8 @@ function opera(version, sysInfo) {
 }
 
 /**
+ * Opera Useragent with advanced options
+ *
  * @param {number | string} version Browser version
  * @param {number | string} prestoVersion Presto version
  * @param {number | string} operaVersion Opera version
@@ -59,6 +71,8 @@ function operaAdvanced(version, prestoVersion, operaVersion, sysInfo) {
 }
 
 /**
+ * Safari Useragent
+ *
  * @param {number | string} version Browser version
  * @param {string} sysInfo System info
  * @returns {string} Useragent
@@ -68,6 +82,8 @@ function safari(version, sysInfo) {
 }
 
 /**
+ * Safari Useragent with advanced options
+ *
  * @param {number | string} version Browser version
  * @param {number | string} webkitBuildVersion Webkit build version
  * @param {number | string} safariBuildVersion Safari build version
