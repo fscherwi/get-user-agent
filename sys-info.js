@@ -1,4 +1,14 @@
-function get() {
+/**
+ * Get system info
+ *
+ * @param {string} sysInfo System info
+ * @returns {string} System info
+ */
+function getSysInfo(sysInfo) {
+	if (sysInfo) {
+		return sysInfo;
+	}
+
 	const os = require('os');
 	switch (os.platform()) {
 		case 'darwin':
@@ -32,4 +42,4 @@ function get() {
 	}
 }
 
-module.exports = get();
+module.exports.getSysInfo = getSysInfo;
