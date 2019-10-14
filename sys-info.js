@@ -10,6 +10,7 @@ function getSysInfo(sysInfo) {
 	}
 
 	const os = require('os');
+	/* istanbul ignore next */
 	switch (os.platform()) {
 		case 'darwin':
 			return 'Macintosh; Intel Mac OS X ' + require('get-osx-version');

@@ -48,7 +48,7 @@
       "lcov"
     ],
     "exclude": [
-      "sys-info.js"
+      "*.test.js"
     ]
   },
   "xo": {
