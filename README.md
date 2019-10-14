@@ -52,7 +52,6 @@ console.log(useragent.firefox(62));
 ## chrome(version, sysInfo) ⇒ <code>string</code>
 Chrome Useragent
 
-**Kind**: global function  
 **Returns**: <code>string</code> - Useragent  
 
 | Param | Type | Description |
@@ -65,7 +64,6 @@ Chrome Useragent
 ## chromeAdvanced(version, webkitVersion, sysInfo) ⇒ <code>string</code>
 Chrome Useragent with advanced options
 
-**Kind**: global function  
 **Returns**: <code>string</code> - Useragent  
 
 | Param | Type | Description |
@@ -79,7 +77,6 @@ Chrome Useragent with advanced options
 ## firefox(version, sysInfo) ⇒ <code>string</code>
 Safari Useragent
 
-**Kind**: global function  
 **Returns**: <code>string</code> - Useragent  
 
 | Param | Type | Description |
@@ -92,7 +89,6 @@ Safari Useragent
 ## firefoxAdvanced(version, geckoVersion, sysInfo) ⇒ <code>string</code>
 Firefox Useragent with advanced options
 
-**Kind**: global function  
 **Returns**: <code>string</code> - Useragent  
 
 | Param | Type | Description |
@@ -106,7 +102,6 @@ Firefox Useragent with advanced options
 ## opera(version, sysInfo) ⇒ <code>string</code>
 Opera Useragent
 
-**Kind**: global function  
 **Returns**: <code>string</code> - Useragent  
 
 | Param | Type | Description |
@@ -119,7 +114,6 @@ Opera Useragent
 ## operaAdvanced(version, prestoVersion, operaVersion, sysInfo) ⇒ <code>string</code>
 Opera Useragent with advanced options
 
-**Kind**: global function  
 **Returns**: <code>string</code> - Useragent  
 
 | Param | Type | Description |
@@ -134,7 +128,6 @@ Opera Useragent with advanced options
 ## safari(version, sysInfo) ⇒ <code>string</code>
 Safari Useragent
 
-**Kind**: global function  
 **Returns**: <code>string</code> - Useragent  
 
 | Param | Type | Description |
@@ -147,7 +140,6 @@ Safari Useragent
 ## safariAdvanced(version, webkitBuildVersion, safariBuildVersion, sysInfo) ⇒ <code>string</code>
 Safari Useragent with advanced options
 
-**Kind**: global function  
 **Returns**: <code>string</code> - Useragent  
 
 | Param | Type | Description |

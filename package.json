@@ -58,5 +58,8 @@
     "extends": [
       "plugin:jsdoc/recommended"
     ]
+  },
+  "engines": {
+    "node": ">=6"
   }
 }
