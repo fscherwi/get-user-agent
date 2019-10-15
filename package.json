@@ -6,7 +6,7 @@
   "scripts": {
     "test": "nyc ava",
     "lint": "xo",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "cat ./coverage/lcov.info | node_modules/.bin/coveralls --verbose"
   },
   "repository": {
     "type": "git",
