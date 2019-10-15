@@ -19,5 +19,5 @@ after_success:
   - npm run coverage
 matrix:
   exclude:
-    - node_js: "---lts"
+    - node_js: "--lts"
       os: windows
