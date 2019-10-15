@@ -2,7 +2,7 @@
  * @param {string} arch The operating system CPU architecture
  * @returns {string} Linux system informations
  */
-function linux(arch) {
+function linux(arch) {/* istanbul ignore next */
 	switch (arch) {
 		case 'x64':
 			return 'Linux; x86_64';
@@ -18,7 +18,7 @@ function linux(arch) {
 /**
  *	@returns {string} macOS system informations
  */
-function mac() {
+function mac() {/* istanbul ignore next */
 	return 'Macintosh; Intel Mac OS X ' + require('get-osx-version');
 }
 
@@ -26,7 +26,7 @@ function mac() {
  * @param {string} arch The operating system CPU architecture
  * @returns {string} Windows system informations
  */
-function windows(arch) {
+function windows(arch) {/* istanbul ignore next */
 	switch (arch) {
 		case 'x64':
 			return 'Windows; Win64; x64';
@@ -40,7 +40,7 @@ function windows(arch) {
 }
 
 /**
- * Get system info
+ * Get system informations
  *
  * @param {string} sysInfo System info
  * @returns {string} System info
