@@ -22,7 +22,8 @@ function linux() {
  *	@returns {string} macOS system informations
  */
 function mac() {
-	return 'Macintosh; Intel Mac OS X ' + require('get-osx-version');
+	const {macOSVersion} = require('get-osx-version');
+	return 'Macintosh; Intel Mac OS X ' + macOSVersion();
 }
 
 /* istanbul ignore next */

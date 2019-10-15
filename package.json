@@ -2,7 +2,7 @@
   "name": "get-user-agent",
   "version": "3.2.2",
   "description": "easily generate a useragent",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "test": "nyc ava",
     "lint": "xo",
@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/fscherwi/get-user-agent#readme",
   "dependencies": {
-    "get-osx-version": "^2.0.0"
+    "get-osx-version": "^3.0.0"
   },
   "devDependencies": {
     "ava": "^2.4.0",
@@ -41,7 +41,7 @@
   "files": [
     "README.md",
     "LICENSE",
-    "main.js",
+    "index.js",
     "sys-info.js"
   ],
   "nyc": {

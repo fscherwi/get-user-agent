@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import {chrome, chromeAdvanced, firefox, firefoxAdvanced, opera, operaAdvanced, safari, safariAdvanced} from './main';
+import {chrome, chromeAdvanced, firefox, firefoxAdvanced, opera, operaAdvanced, safari, safariAdvanced} from '.';
 const parser = require('ua-parser-js');
 
 test('Chrome', t => {
