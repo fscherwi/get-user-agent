@@ -17,5 +17,7 @@ script:
   - npm run test
 after_success:
   - npm run coverage
-allow_failures:
-  - windows
+matrix:
+  exclude:
+    - node_js: "---lts"
+      os: windows
