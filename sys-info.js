@@ -1,9 +1,10 @@
+const os = require('os');
+
 /**
- * @param {string} arch The operating system CPU architecture
  * @returns {string} Linux system informations
  */
-function linux(arch) {/* istanbul ignore next */
-	switch (arch) {
+function linux() {/* istanbul ignore next */
+	switch (os.arch()) {
 		case 'x64':
 			return 'Linux; x86_64';
 		case 'i686':
@@ -23,19 +24,25 @@ function mac() {/* istanbul ignore next */
 }
 
 /**
- * @param {string} arch The operating system CPU architecture
  * @returns {string} Windows system informations
  */
-function windows(arch) {/* istanbul ignore next */
-	switch (arch) {
+function windows() {/* istanbul ignore next */
+	let version;
+	try {
+		version = parseFloat(os.release());
+	} catch {
+		version = '';
+	}
+
+	switch (os.arch()) {
 		case 'x64':
-			return 'Windows; Win64; x64';
+			return 'Windows NT ' + version + '; Win64; x64';
 		case 'x86':
-			return 'Windows; Win32; x86';
+			return 'Windows NT ' + version + '; Win32; x86';
 		case 'arm':
-			return 'Windows; ARM';
+			return 'Windows NT ' + version + '; ARM';
 		default:
-			return 'Windows';
+			return 'Windows NT ' + version;
 	}
 }
 
@@ -50,17 +57,16 @@ function getSysInfo(sysInfo) {
 		return sysInfo;
 	}
 
-	const os = require('os');
 	/* istanbul ignore next */
 	switch (os.platform()) {
 		case 'darwin':
 			return mac();
 
 		case 'linux':
-			return linux(os.arch());
+			return linux();
 
 		case 'windows':
-			return windows(os.arch());
+			return windows();
 
 		default:
 			return '';
