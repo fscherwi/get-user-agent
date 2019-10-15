@@ -1,9 +1,10 @@
 const os = require('os');
 
+/* istanbul ignore next */
 /**
  * @returns {string} Linux system informations
  */
-function linux() {/* istanbul ignore next */
+function linux() {
 	switch (os.arch()) {
 		case 'x64':
 			return 'Linux; x86_64';
@@ -16,17 +17,19 @@ function linux() {/* istanbul ignore next */
 	}
 }
 
+/* istanbul ignore next */
 /**
  *	@returns {string} macOS system informations
  */
-function mac() {/* istanbul ignore next */
+function mac() {
 	return 'Macintosh; Intel Mac OS X ' + require('get-osx-version');
 }
 
+/* istanbul ignore next */
 /**
  * @returns {string} Windows system informations
  */
-function windows() {/* istanbul ignore next */
+function windows() {
 	let version;
 	try {
 		version = parseFloat(os.release());
