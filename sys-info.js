@@ -56,7 +56,7 @@ function windows() {
  * @param {string} sysInfo System info
  * @returns {string} System info
  */
-function getSysInfo(sysInfo) {
+module.exports.getSysInfo = sysInfo => {
 	if (sysInfo) {
 		return sysInfo;
 	}
@@ -75,6 +75,4 @@ function getSysInfo(sysInfo) {
 		default:
 			return '';
 	}
-}
-
-module.exports.getSysInfo = getSysInfo;
+};
