@@ -31,13 +31,12 @@
     "get-osx-version": "^3.0.0"
   },
   "devDependencies": {
-    "@ava/babel": "^1.0.1",
     "ava": "^3.5.0",
     "coveralls": "^3.0.9",
-    "eslint-plugin-jsdoc": "^22.0.0",
+    "eslint-plugin-jsdoc": "^22.0.1",
     "nyc": "^15.0.0",
     "ua-parser-js": "^0.7.21",
-    "xo": "^0.27.2"
+    "xo": "^0.28.0"
   },
   "files": [
     "README.md",
@@ -60,8 +59,5 @@
   },
   "engines": {
     "node": ">=10"
-  },
-  "ava": {
-    "babel": true
   }
 }

@@ -1,6 +1,6 @@
-import test from 'ava';
+const test = require('ava');
 
-import {firefox} from '.';
+const {firefox} = require('.');
 const parser = require('ua-parser-js');
 
 test('empty sysInfo', t => {
