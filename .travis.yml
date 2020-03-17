@@ -16,7 +16,7 @@ script:
   - npm run lint
   - npm run test
 after_success:
-  - npm run coverage
+  - cat ./coverage/lcov.info | node_modules/.bin/coveralls
 matrix:
   exclude:
     - node_js: "--lts"

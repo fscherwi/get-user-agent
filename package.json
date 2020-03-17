@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc ava",
-    "lint": "xo",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "lint": "xo"
   },
   "repository": {
     "type": "git",
