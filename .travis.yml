@@ -2,8 +2,8 @@ os:
   - osx
   - linux
   - windows
+dist: bionic
 language: node_js
-sudo: false
 node_js:
   - "node"
   - "--lts"
@@ -16,8 +16,4 @@ script:
   - npm run lint
   - npm run test
 after_success:
-  - cat ./coverage/lcov.info | node_modules/.bin/coveralls
-matrix:
-  exclude:
-    - node_js: "--lts"
-      os: windows
+  - npx nyc report --reporter=text-lcov | npx coveralls
