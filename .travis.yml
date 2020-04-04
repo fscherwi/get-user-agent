@@ -17,3 +17,7 @@ script:
   - npm run test
 after_success:
   - npx nyc report --reporter=text-lcov | npx coveralls
+jobs:
+  exclude:
+    - node_js: "--lts"
+      os: windows
