@@ -4,7 +4,7 @@ const os = require('os');
 /**
  * @returns {string} Linux system informations
  */
-function linux() {
+function sysInfoLinux() {
 	switch (os.arch()) {
 		case 'x64':
 			return 'Linux; x86_64';
@@ -21,7 +21,7 @@ function linux() {
 /**
  *	@returns {string} macOS system informations
  */
-function mac() {
+function sysInfoMac() {
 	const {macOSVersion} = require('get-osx-version');
 	return 'Macintosh; Intel Mac OS X ' + macOSVersion();
 }
@@ -30,7 +30,7 @@ function mac() {
 /**
  * @returns {string} Windows system informations
  */
-function windows() {
+function sysInfoWindows() {
 	let version;
 	try {
 		version = parseFloat(os.release());
@@ -63,14 +63,14 @@ module.exports.getSysInfo = sysInfo => {
 
 	/* istanbul ignore next */
 	switch (os.platform()) {
-		case 'darwin':
-			return mac();
-
 		case 'linux':
-			return linux();
+			return sysInfoLinux();
+
+		case 'darwin':
+			return sysInfoMac();
 
 		case 'windows':
-			return windows();
+			return sysInfoWindows();
 
 		default:
 			return '';

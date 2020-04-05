@@ -1,7 +1,7 @@
 const test = require('ava');
 
-const {chrome, chromeAdvanced, firefox, firefoxAdvanced, opera, operaAdvanced, safari, safariAdvanced} = require('.');
 const parser = require('ua-parser-js');
+const {chrome, chromeAdvanced, firefox, firefoxAdvanced, opera, operaAdvanced, safari, safariAdvanced} = require('.');
 
 test('Chrome', t => {
 	const version = '41.0.2228.0';

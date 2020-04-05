@@ -1,7 +1,7 @@
 const test = require('ava');
 
-const {firefox} = require('.');
 const parser = require('ua-parser-js');
+const {firefox} = require('.');
 
 test('empty sysInfo', t => {
 	const version = '41.0';

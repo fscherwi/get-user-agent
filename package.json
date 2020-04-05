@@ -1,7 +1,7 @@
 {
   "name": "get-user-agent",
   "version": "4.0.1",
-  "description": "easily generate a useragent",
+  "description": "Easily generate a User agent",
   "main": "index.js",
   "scripts": {
     "test": "nyc ava",
@@ -13,6 +13,7 @@
   },
   "keywords": [
     "useragent",
+    "user agent",
     "user-agent",
     "browser",
     "firefox",
@@ -49,9 +50,6 @@
     ]
   },
   "xo": {
-    "plugins": [
-      "jsdoc"
-    ],
     "extends": [
       "plugin:jsdoc/recommended"
     ]
