@@ -4,7 +4,7 @@ const {getSysInfo} = require('./sys-info');
  * Chrome user agent
  *
  * @param {number | string} version Browser version
- * @param {string} sysInfo System information
+ * @param {string} [sysInfo] System information
  * @returns {string} User agent
  */
 function chrome(version, sysInfo) {
@@ -16,7 +16,7 @@ function chrome(version, sysInfo) {
  *
  * @param {number | string} version Browser version
  * @param {number | string} webkitVersion Webkit version
- * @param {string} sysInfo System information
+ * @param {string} [sysInfo] System information
  * @returns {string} User agent
  */
 function chromeAdvanced(version, webkitVersion, sysInfo) {
@@ -27,7 +27,7 @@ function chromeAdvanced(version, webkitVersion, sysInfo) {
  * Safari user agent
  *
  * @param {number | string} version Browser version
- * @param {string} sysInfo System information
+ * @param {string} [sysInfo] System information
  * @returns {string} User agent
  */
 function firefox(version, sysInfo) {
@@ -39,7 +39,7 @@ function firefox(version, sysInfo) {
  *
  * @param {number | string} version Browser version
  * @param {number | string} geckoVersion Gecko version
- * @param {string} sysInfo System information
+ * @param {string} [sysInfo] System information
  * @returns {string} User agent
  */
 function firefoxAdvanced(version, geckoVersion, sysInfo) {
@@ -50,7 +50,7 @@ function firefoxAdvanced(version, geckoVersion, sysInfo) {
  * Opera user agent
  *
  * @param {number | string} version Browser version
- * @param {string} sysInfo System information
+ * @param {string} [sysInfo] System information
  * @returns {string} User agent
  */
 function opera(version, sysInfo) {
@@ -63,7 +63,7 @@ function opera(version, sysInfo) {
  * @param {number | string} version Browser version
  * @param {number | string} prestoVersion Presto version
  * @param {number | string} operaVersion Opera version
- * @param {string} sysInfo System information
+ * @param {string} [sysInfo] System information
  * @returns {string} User agent
  */
 function operaAdvanced(version, prestoVersion, operaVersion, sysInfo) {
@@ -74,7 +74,7 @@ function operaAdvanced(version, prestoVersion, operaVersion, sysInfo) {
  * Safari user agent
  *
  * @param {number | string} version Browser version
- * @param {string} sysInfo System information
+ * @param {string} [sysInfo] System information
  * @returns {string} User agent
  */
 function safari(version, sysInfo) {
@@ -87,7 +87,7 @@ function safari(version, sysInfo) {
  * @param {number | string} version Browser version
  * @param {number | string} webkitBuildVersion Webkit build version
  * @param {number | string} safariBuildVersion Safari build version
- * @param {string} sysInfo System information
+ * @param {string} [sysInfo] System information
  * @returns {string} User agent
  */
 function safariAdvanced(version, webkitBuildVersion, safariBuildVersion, sysInfo) {
