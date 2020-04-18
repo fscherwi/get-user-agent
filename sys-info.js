@@ -33,7 +33,7 @@ function sysInfoMac() {
 function sysInfoWindows() {
 	let version;
 	try {
-		version = parseFloat(os.release());
+		version = Number.parseFloat(os.release());
 	} catch {
 		version = '';
 	}
