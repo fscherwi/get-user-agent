@@ -33,7 +33,7 @@
   "devDependencies": {
     "ava": "^3.13.0",
     "coveralls": "^3.1.0",
-    "eslint-plugin-jsdoc": "^30.3.0",
+    "eslint-plugin-jsdoc": "^30.6.2",
     "nyc": "^15.1.0",
     "tsd": "^0.13.1",
     "ua-parser-js": "^0.7.22",
