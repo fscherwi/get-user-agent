@@ -36,7 +36,7 @@
     "eslint-plugin-jsdoc": "^32.2.0",
     "nyc": "^15.1.0",
     "tsd": "^0.14.0",
-    "ua-parser-js": "^0.7.24",
+    "ua-parser-js": "^0.7.28",
     "xo": "^0.38.2"
   },
   "files": [
