@@ -1,5 +1,5 @@
 import {expectType} from 'tsd';
-import getuseragent = require('.');
+import getuseragent from './index.js';
 
 expectType<string>(getuseragent.chrome('41.0.2228.0'));
 expectType<string>(getuseragent.chromeAdvanced('41.0.2228.0', '537.36'));

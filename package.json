@@ -33,11 +33,11 @@
   "devDependencies": {
     "ava": "^3.15.0",
     "coveralls": "^3.1.0",
-    "eslint-plugin-jsdoc": "^32.2.0",
+    "eslint-plugin-jsdoc": "^34.0.0",
     "nyc": "^15.1.0",
-    "tsd": "^0.14.0",
-    "ua-parser-js": "^0.7.24",
-    "xo": "^0.38.2"
+    "tsd": "^0.15.1",
+    "ua-parser-js": "^0.7.28",
+    "xo": "^0.40.0"
   },
   "files": [
     "README.md",
@@ -53,7 +53,8 @@
     ],
     "rules": {
       "@typescript-eslint/no-unsafe-call": 0,
-      "@typescript-eslint/no-unsafe-member-access": 0
+      "@typescript-eslint/no-unsafe-member-access": 0,
+      "unicorn/prefer-module": 0
     }
   },
   "engines": {
