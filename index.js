@@ -1,4 +1,4 @@
-const {getSysInfo} = require('./sys-info');
+const {getSysInfo} = require('./sys-info.js');
 
 /**
  * Chrome user agent
