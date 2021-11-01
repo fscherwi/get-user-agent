@@ -1,6 +1,6 @@
 # get-user-agent
 
-[![Build Status](https://travis-ci.org/fscherwi/get-user-agent.svg?branch=master)](https://travis-ci.org/fscherwi/get-user-agent) [![Coverage Status](https://coveralls.io/repos/fscherwi/get-user-agent/badge.svg?branch=master&service=github)](https://coveralls.io/github/fscherwi/get-user-agent?branch=master)
+![Build Status](https://github.com/fscherwi/get-user-agent/actions/workflows/ci.yml/badge.svg) [![Coverage Status](https://coveralls.io/repos/fscherwi/get-user-agent/badge.svg?branch=master&service=github)](https://coveralls.io/github/fscherwi/get-user-agent?branch=master)
 
 Easily generate a browser user agent!
 

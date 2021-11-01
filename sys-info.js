@@ -1,6 +1,5 @@
 const os = require('os');
 
-/* istanbul ignore next */
 /**
  * @returns {string} Linux system informations
  */
@@ -17,7 +16,6 @@ function sysInfoLinux() {
 	}
 }
 
-/* istanbul ignore next */
 /**
  *	@returns {string} macOS system informations
  */
@@ -26,7 +24,6 @@ function sysInfoMac() {
 	return 'Macintosh; Intel Mac OS X ' + macOSVersion();
 }
 
-/* istanbul ignore next */
 /**
  * @returns {string} Windows system informations
  */
@@ -61,7 +58,6 @@ module.exports.getSysInfo = sysInfo => {
 		return sysInfo;
 	}
 
-	/* istanbul ignore next */
 	switch (os.platform()) {
 		case 'linux':
 			return sysInfoLinux();
