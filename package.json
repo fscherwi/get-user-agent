@@ -4,7 +4,7 @@
   "description": "Easily generate a User agent",
   "main": "index.js",
   "scripts": {
-    "test": "nyc ava && tsd",
+    "test": "ava && tsd",
     "lint": "xo"
   },
   "repository": {
@@ -32,9 +32,7 @@
   },
   "devDependencies": {
     "ava": "^3.15.0",
-    "coveralls": "^3.1.1",
     "eslint-plugin-jsdoc": "^37.0.0",
-    "nyc": "^15.1.0",
     "tsd": "^0.18.0",
     "ua-parser-js": "^1.0.1",
     "xo": "^0.45.0"
