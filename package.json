@@ -35,7 +35,7 @@
     "eslint-plugin-jsdoc": "^37.0.3",
     "tsd": "^0.18.0",
     "ua-parser-js": "^1.0.2",
-    "xo": "^0.46.3"
+    "xo": "^0.47.0"
   },
   "files": [
     "README.md",
