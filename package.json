@@ -31,7 +31,7 @@
     "get-osx-version": "^3.0.0"
   },
   "devDependencies": {
-    "ava": "^5.0.1",
+    "ava": "^5.1.0",
     "eslint-plugin-jsdoc": "^39.4.0",
     "tsd": "^0.24.1",
     "ua-parser-js": "^1.0.32",
