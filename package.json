@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "ava": "^5.2.0",
-    "eslint-plugin-jsdoc": "^40.0.0",
+    "eslint-plugin-jsdoc": "^40.1.1",
     "tsd": "^0.25.0",
     "ua-parser-js": "^1.0.33",
     "xo": "^0.52.4"
