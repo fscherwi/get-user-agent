@@ -34,7 +34,7 @@
     "ava": "^5.2.0",
     "eslint-plugin-jsdoc": "^40.1.1",
     "tsd": "^0.28.1",
-    "ua-parser-js": "^1.0.34",
+    "ua-parser-js": "^1.0.35",
     "xo": "^0.52.4"
   },
   "files": [
